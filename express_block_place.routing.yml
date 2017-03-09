@@ -1,0 +1,25 @@
+express_block_place.edit_layout:
+  path: 'node/{node}/layout'
+  defaults:
+    _controller: '\Drupal\express_block_place\Controller\ExpressBlockPlaceController::edit_layout'
+    _title: 'Edit layout'
+  requirements:
+    _permission: 'administer content types'
+
+express_block_place.admin_library:
+  path: 'admin/express_block_place/list-blocks/{theme}'
+  defaults:
+    _controller: '\Drupal\express_block_place\Controller\ExpressBlockPlaceLibraryController::listBlocks'
+    _title: 'Place block (Express Layout)'
+  requirements:
+    _access_theme: 'TRUE'
+    _permission: 'administer blocks'
+
+express_block_place.admin_add:
+  path: 'admin/express_block_place/add/{plugin_id}/{theme}'
+  defaults:
+    _controller: '\Drupal\express_block_place\Controller\ExpressBlockPlaceAddController::blockAddConfigureForm'
+    _title: 'Add block (Express Layout)'
+  requirements:
+    _access_theme: 'TRUE'
+    _permission: 'administer blocks'

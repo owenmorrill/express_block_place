@@ -1,0 +1,6 @@
+services:
+  express_block_place.page_display_variant_subscriber.block:
+    class: Drupal\express_block_place\EventSubscriber\ExpressBlockPlaceEventSubscriber
+    arguments: ['@request_stack', '@current_user']
+    tags:
+      - { name: event_subscriber }

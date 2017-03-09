@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains express_block_place.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function express_block_place_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the express_block_place module.
+    case 'help.page.express_block_place':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Place blocks onto pages.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function express_block_place_theme() {
+  return [
+    'express_block_place' => [
+      'template' => 'express_block_place',
+      'render element' => 'children',
+    ],
+  ];
+}

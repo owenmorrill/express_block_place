@@ -1,0 +1,7 @@
+name: Express Block Place
+type: module
+description: Place blocks onto pages.
+core: 8.x
+package: CU-Core
+dependencies:
+  - settings_tray

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/express_block_place",
+  "type": "drupal-module",
+  "description": "Place blocks onto pages.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/express_block_place",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/express_block_place",
+    "source": "http://cgit.drupalcode.org/express_block_place"
+  },
+  "require": { }
+}

@@ -1,0 +1,5 @@
+express_block_place.edit_layout:
+  route_name: express_block_place.edit_layout
+  title: 'Edit layout'
+  base_route: entity.node.canonical
+  weight: 10
